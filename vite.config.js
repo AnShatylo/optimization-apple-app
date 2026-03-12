@@ -6,6 +6,15 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    server: {
+      proxy: {
+        '/api/mobile': {
+          target: 'https://test-api-cdn.ams3.cdn.digitaloceanspaces.com',
+          changeOrigin: true,
+          rewrite: path => path.replace(/^\/api\/mobile/, ''),
+        },
+      },
+    },
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
