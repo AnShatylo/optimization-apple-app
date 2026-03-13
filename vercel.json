@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/mobile/:path*",
+      "destination": "https://test-api-cdn.ams3.cdn.digitaloceanspaces.com/:path*"
+    }
+  ]
+}
