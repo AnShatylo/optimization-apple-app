@@ -8,14 +8,14 @@ export async function alertInit() {
         <img
         src="./img/png/settings-img.png"
         alt="Icon of IOS Settings"
-        class="action-img"
+        class="alert-img"
         />
-        <div>
+        <div class="alert-right">
             <div class="alert-title">
                 <p class="alert-heading">Settings</p>
                 <span class="alert-time">now</span>
             </div>
-            <p class="alert-desc">${appData.status_summary.recommendation}</p>
+            <p class="alert-descr">${appData.status_summary.recommendation}</p>
         </div>
     </div>  
   `;

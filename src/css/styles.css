@@ -8,7 +8,14 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
+@import url('./animations.css');
 
 /* Sections style */
 
-
+@import url('sections/header.css');
+@import url('sections/action-required.css');
+@import url('sections/personal-info.css');
+@import url('sections/device-info.css');
+@import url('sections/actions.css');
+@import url('sections/alert.css');
+@import url('sections/popup.css');

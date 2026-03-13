@@ -12,10 +12,12 @@ export async function personalInfoInit() {
               item => `
             <li class="personal-info-item">
               <p class="personal-info-type">${item.name}</p>
-              <p class="personal-info-value">${item.content ?? ''}</p>
-              <svg class="action-required-item-icon" width="11" height="19">
-                <use href="./img/svg/icons.svg#icon-arrow" />
-              </svg>
+              <div class="personal-info-right">
+                <p class="personal-info-value">${item.content ?? ''}</p>
+                <svg class="personal-info-icon" width="11" height="19">
+                  <use href="./img/svg/icons.svg#icon-arrow" />
+                </svg>
+              </div>
             </li>
           `
             )

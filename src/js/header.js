@@ -7,15 +7,17 @@ export async function headerInit() {
     <section class="header">
         <div class="container">
           <div class="header-wrap">
-            <img
-              src="./img/png/settings-img.png"
-              alt="Icon of IOS Settings"
-              class="action-img"
-            />
-            <div>
-              <h1 class="header-brand">${appData.device.brand}</h1>
-              <p class="header-model">${appData.device.model}</p>
-              <p class="header-status">Result: ${appData.device.status}</p>
+            <div class="header-left">
+              <img
+                src="./img/png/settings-img.png"
+                alt="Icon of IOS Settings"
+                class="header-img"
+              />
+              <div class="header-info">
+                <h1 class="header-brand">${appData.device.brand}</h1>
+                <p class="header-model">${appData.device.model}</p>
+                <p class="header-status">Result: ${appData.device.status}</p>
+              </div>
             </div>
             <span class="header-recommendation">Action Required</span>
           </div>

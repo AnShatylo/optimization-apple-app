@@ -9,13 +9,16 @@ export async function actionRequiredInit() {
           <ul class="action-required-list">
             ${appData.action_required.items
               .map(
-                (item, index) => `<li class="action-required-item">
-              <svg class="action-required-item-icon" width="32" height="32">
-                <use href="./img/svg/icons.svg#icon-settings" />
-              </svg>
-              <p class="action-required-name">${item.name}</p>
-              <p class="action-required-name-qty">${qty[index]}</p>
-            </li>`
+                (item, index) =>
+                  `<li class="action-required-item">
+                    <div class="action-required-item-info">
+                      <svg class="action-required-item-icon" width="32" height="32">
+                        <use href="./img/svg/icons.svg#icon-settings" />
+                      </svg>
+                      <p class="action-required-name">${item.name}</p>
+                    </div>
+                    <p class="action-required-name-qty">${qty[index]}</>
+                  </li>`
               )
               .join('')}
           </ul>

@@ -1,0 +1,46 @@
+.device-info {
+  padding-bottom: 70px;
+}
+
+.device-info-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 10px;
+  background: #1c1c1e;
+}
+.device-info-img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.device-type {
+  font-family: var(--third-family);
+  font-size: 18px;
+  line-height: 1.4;
+}
+.device-description {
+  font-family: var(--second-family);
+  font-size: 12px;
+  line-height: 1.3;
+  color: #7f7f7f;
+}
+
+@media only screen and (min-width: 991px) {
+  .device-description {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1560px) {
+  .device-info-img {
+    width: 60px;
+  }
+  .device-type {
+    font-size: 20px;
+  }
+  .device-description {
+    font-size: 16px;
+  }
+}
