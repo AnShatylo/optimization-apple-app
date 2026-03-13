@@ -16,7 +16,7 @@ export async function actionRequiredInit() {
                         class="action-required-item-icon"
                         width="24"
                         height="24"
-                        viewBox="0 0 24 24"
+                        viewBox="0 0 32 32"
                         aria-hidden="true"
                       >
                         <path d="M15.999 8.335c0.552 0 1 0.448 1 1v8c0 0.552-0.448 1-1 1s-1-0.448-1-1v-8c0-0.552 0.448-1 1-1z"></path>
