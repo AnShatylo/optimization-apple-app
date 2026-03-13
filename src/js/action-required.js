@@ -14,9 +14,9 @@ export async function actionRequiredInit() {
                     <div class="action-required-item-info">
                       <svg
                         class="action-required-item-icon"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path d="M15.999 8.335c0.552 0 1 0.448 1 1v8c0 0.552-0.448 1-1 1s-1-0.448-1-1v-8c0-0.552 0.448-1 1-1z"></path>
