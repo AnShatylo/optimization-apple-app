@@ -5,17 +5,17 @@ export async function alertInit() {
 
   const appHTTML = `
     <div class="alert">
-        <img
-        src="./img/png/settings-img.png"
+      <img
+        src="${new URL('../img/png/settings-img.png', import.meta.url).href}"
         alt="Icon of IOS Settings"
         class="alert-img"
-        />
-        <div class="alert-right">
-            <div class="alert-title">
-                <p class="alert-heading">Settings</p>
-                <span class="alert-time">now</span>
-            </div>
-            <p class="alert-descr">${appData.status_summary.recommendation}</p>
+      />
+      <div class="alert-right">
+          <div class="alert-title">
+            <p class="alert-heading">Settings</p>
+            <span class="alert-time">now</span>
+          </div>
+          <p class="alert-descr">${appData.status_summary.recommendation}</p>
         </div>
     </div>  
   `;

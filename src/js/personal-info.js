@@ -15,7 +15,7 @@ export async function personalInfoInit() {
               <div class="personal-info-right">
                 <p class="personal-info-value">${item.content ?? ''}</p>
                 <svg class="personal-info-icon" width="11" height="19">
-                  <use href="./img/svg/icons.svg#icon-arrow" />
+                  <use href="${new URL('../img/svg/icons.svg', import.meta.url).href}#icon-arrow" />
                 </svg>
               </div>
             </li>

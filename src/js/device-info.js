@@ -8,7 +8,7 @@ export async function deviceInfoInit() {
         <div class="container">
           <div class="device-info-wrap">
             <img
-              src="./img/png/iPhone Space Deep Purple Front.png"
+              src="${new URL('../img/png/iPhone Space Deep Purple Front.png', import.meta.url).href}"
               alt="Image of IPhone"
               class="device-info-img"
             />

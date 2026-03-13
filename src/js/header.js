@@ -9,7 +9,7 @@ export async function headerInit() {
           <div class="header-wrap">
             <div class="header-left">
               <img
-                src="./img/png/settings-img.png"
+                src="${new URL('../img/png/settings-img.png', import.meta.url).href}"
                 alt="Icon of IOS Settings"
                 class="header-img"
               />

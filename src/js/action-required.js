@@ -13,7 +13,7 @@ export async function actionRequiredInit() {
                   `<li class="action-required-item">
                     <div class="action-required-item-info">
                       <svg class="action-required-item-icon" width="32" height="32">
-                        <use href="./img/svg/icons.svg#icon-settings" />
+                        <use href="${new URL('../img/svg/icons.svg', import.meta.url).href}#icon-settings" />
                       </svg>
                       <p class="action-required-name">${item.name}</p>
                     </div>

@@ -11,7 +11,7 @@ export async function popupInit() {
             <p class="popup-descr">${appData.optimization_status.submessage}</p>
             <p class="popup-timer">01:00</p>
             <img
-              src="./img/png/settings-img-popup.png"
+              src="${new URL('../img/png/settings-img-popup.png', import.meta.url).href}"
               alt="Icon of IOS Settings with attention sign"
               class="popup-img"
             />
