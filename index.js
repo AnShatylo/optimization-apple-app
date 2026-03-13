@@ -1,4 +1,4 @@
-import{a as r}from"./assets/vendor-Dl2X3eg5.js";(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))n(s);new MutationObserver(s=>{for(const i of s)if(i.type==="childList")for(const o of i.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function a(s){const i={};return s.integrity&&(i.integrity=s.integrity),s.referrerPolicy&&(i.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?i.credentials="include":s.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function n(s){if(s.ep)return;s.ep=!0;const i=a(s);fetch(s.href,i)}})();const p="/api/mobile/mobile.json";async function c(){try{return(await r.get(p)).data}catch(e){alert("Error fetching data: "+e)}}async function l(){const e=await c();return`
+import{a as r}from"./assets/vendor-Dl2X3eg5.js";(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))c(s);new MutationObserver(s=>{for(const a of s)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&c(o)}).observe(document,{childList:!0,subtree:!0});function i(s){const a={};return s.integrity&&(a.integrity=s.integrity),s.referrerPolicy&&(a.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?a.credentials="include":s.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function c(s){if(s.ep)return;s.ep=!0;const a=i(s);fetch(s.href,a)}})();const p="/api/mobile/mobile.json";async function n(){try{return(await r.get(p)).data}catch(t){alert("Error fetching data: "+t)}}async function l(){const t=await n();return`
     <section class="header">
         <div class="container">
           <div class="header-wrap">
@@ -9,9 +9,9 @@ import{a as r}from"./assets/vendor-Dl2X3eg5.js";(function(){const t=document.cre
                 class="header-img"
               />
               <div class="header-info">
-                <h1 class="header-brand">${e.device.brand}</h1>
-                <p class="header-model">${e.device.model}</p>
-                <p class="header-status">Result: ${e.device.status}</p>
+                <h1 class="header-brand">${t.device.brand}</h1>
+                <p class="header-model">${t.device.model}</p>
+                <p class="header-status">Result: ${t.device.status}</p>
               </div>
             </div>
             <span class="header-recommendation">Action Required</span>
@@ -22,13 +22,19 @@ import{a as r}from"./assets/vendor-Dl2X3eg5.js";(function(){const t=document.cre
      <section class="personal-info">
         <div class="container">
           <ul class="personal-info-list">
-          ${(await c()).personal_info_sections.map(a=>`
+          ${(await n()).personal_info_sections.map(i=>`
             <li class="personal-info-item">
-              <p class="personal-info-type">${a.name}</p>
+              <p class="personal-info-type">${i.name}</p>
               <div class="personal-info-right">
-                <p class="personal-info-value">${a.content??""}</p>
-                <svg class="personal-info-icon" width="11" height="19">
-                  <use href="${new URL("data:image/svg+xml,%3csvg%20aria-hidden='true'%20style='position:%20absolute;%20width:%200;%20height:%200;%20overflow:%20hidden;'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3csymbol%20id='icon-home-indicator'%20viewBox='0%200%20858%2032'%3e%3cpath%20d='M16%200h825.6c8.837%200%2016%207.163%2016%2016s-7.163%2016-16%2016h-825.6c-8.837%200-16-7.163-16-16s7.163-16%2016-16z'%3e%3c/path%3e%3c/symbol%3e%3csymbol%20id='icon-arrow'%20viewBox='0%200%2020%2032'%3e%3cpath%20d='M17.618%2015.111c0%200.337-0.067%200.656-0.202%200.959-0.123%200.292-0.325%200.572-0.606%200.841l-12.94%2012.671c-0.438%200.426-0.97%200.639-1.599%200.639-0.404%200-0.78-0.101-1.127-0.303s-0.628-0.471-0.841-0.808c-0.202-0.337-0.303-0.718-0.303-1.144%200-0.617%200.236-1.167%200.707-1.649l11.526-11.207-11.526-11.207c-0.471-0.471-0.707-1.021-0.707-1.649%200-0.415%200.101-0.791%200.303-1.127%200.213-0.348%200.494-0.623%200.841-0.825s0.724-0.303%201.127-0.303c0.628%200%201.161%200.213%201.599%200.639l12.94%2012.671c0.269%200.269%200.471%200.55%200.606%200.841s0.202%200.611%200.202%200.959z'%3e%3c/path%3e%3c/symbol%3e%3csymbol%20id='icon-settings'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M15.999%208.335c0.552%200%201%200.448%201%201v8c0%200.552-0.448%201-1%201s-1-0.448-1-1v-8c0-0.552%200.448-1%201-1z'%3e%3c/path%3e%3cpath%20d='M15.999%2022.668c0.736%200%201.333-0.597%201.333-1.333s-0.597-1.333-1.333-1.333c-0.736%200-1.333%200.597-1.333%201.333s0.597%201.333%201.333%201.333z'%3e%3c/path%3e%3cpath%20d='M1.666%2016.001c0-7.916%206.417-14.333%2014.333-14.333s14.333%206.417%2014.333%2014.333-6.417%2014.333-14.333%2014.333c-7.916%200-14.333-6.417-14.333-14.333zM15.999%203.668c-6.811%200-12.333%205.522-12.333%2012.333s5.522%2012.333%2012.333%2012.333c6.812%200%2012.333-5.522%2012.333-12.333s-5.522-12.333-12.333-12.333z'%3e%3c/path%3e%3c/symbol%3e%3c/defs%3e%3c/svg%3e",import.meta.url).href}#icon-arrow" />
+                <p class="personal-info-value">${i.content??""}</p>
+                <svg
+                  class="personal-info-icon"
+                  width="11"
+                  height="19"
+                  viewBox="0 0 20 32"
+                  aria-hidden="true"
+                >
+                  <path d="M17.618 15.111c0 0.337-0.067 0.656-0.202 0.959-0.123 0.292-0.325 0.572-0.606 0.841l-12.94 12.671c-0.438 0.426-0.97 0.639-1.599 0.639-0.404 0-0.78-0.101-1.127-0.303s-0.628-0.471-0.841-0.808c-0.202-0.337-0.303-0.718-0.303-1.144 0-0.617 0.236-1.167 0.707-1.649l11.526-11.207-11.526-11.207c-0.471-0.471-0.707-1.021-0.707-1.649 0-0.415 0.101-0.791 0.303-1.127 0.213-0.348 0.494-0.623 0.841-0.825s0.724-0.303 1.127-0.303c0.628 0 1.161 0.213 1.599 0.639l12.94 12.671c0.269 0.269 0.471 0.55 0.606 0.841s0.202 0.611 0.202 0.959z"></path>
                 </svg>
               </div>
             </li>
@@ -36,7 +42,7 @@ import{a as r}from"./assets/vendor-Dl2X3eg5.js";(function(){const t=document.cre
           </ul>
         </div>
       </section>
-  `}async function m(){const e=await c();return`
+  `}async function m(){const t=await n();return`
     <section class="device-info">
         <div class="container">
           <div class="device-info-wrap">
@@ -46,37 +52,45 @@ import{a as r}from"./assets/vendor-Dl2X3eg5.js";(function(){const t=document.cre
               class="device-info-img"
             />
             <div class="device-info-content">
-              <p class="device-type">${e.device_info.type}</p>
-              <p class="device-description">${e.device_info.description}</p>
+              <p class="device-type">${t.device_info.type}</p>
+              <p class="device-description">${t.device_info.description}</p>
             </div>
           </div>
         </div>
       </section>
-  `}async function h(){const e=await c(),t=[14,6,8,2];return`
+  `}async function f(){const t=await n(),e=[14,6,8,2];return`
     <section class="action-required">
         <div class="container">
           <ul class="action-required-list">
-            ${e.action_required.items.map((n,s)=>`<li class="action-required-item">
+            ${t.action_required.items.map((c,s)=>`<li class="action-required-item">
                     <div class="action-required-item-info">
-                      <svg class="action-required-item-icon" width="32" height="32">
-                        <use href="${new URL("data:image/svg+xml,%3csvg%20aria-hidden='true'%20style='position:%20absolute;%20width:%200;%20height:%200;%20overflow:%20hidden;'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3csymbol%20id='icon-home-indicator'%20viewBox='0%200%20858%2032'%3e%3cpath%20d='M16%200h825.6c8.837%200%2016%207.163%2016%2016s-7.163%2016-16%2016h-825.6c-8.837%200-16-7.163-16-16s7.163-16%2016-16z'%3e%3c/path%3e%3c/symbol%3e%3csymbol%20id='icon-arrow'%20viewBox='0%200%2020%2032'%3e%3cpath%20d='M17.618%2015.111c0%200.337-0.067%200.656-0.202%200.959-0.123%200.292-0.325%200.572-0.606%200.841l-12.94%2012.671c-0.438%200.426-0.97%200.639-1.599%200.639-0.404%200-0.78-0.101-1.127-0.303s-0.628-0.471-0.841-0.808c-0.202-0.337-0.303-0.718-0.303-1.144%200-0.617%200.236-1.167%200.707-1.649l11.526-11.207-11.526-11.207c-0.471-0.471-0.707-1.021-0.707-1.649%200-0.415%200.101-0.791%200.303-1.127%200.213-0.348%200.494-0.623%200.841-0.825s0.724-0.303%201.127-0.303c0.628%200%201.161%200.213%201.599%200.639l12.94%2012.671c0.269%200.269%200.471%200.55%200.606%200.841s0.202%200.611%200.202%200.959z'%3e%3c/path%3e%3c/symbol%3e%3csymbol%20id='icon-settings'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M15.999%208.335c0.552%200%201%200.448%201%201v8c0%200.552-0.448%201-1%201s-1-0.448-1-1v-8c0-0.552%200.448-1%201-1z'%3e%3c/path%3e%3cpath%20d='M15.999%2022.668c0.736%200%201.333-0.597%201.333-1.333s-0.597-1.333-1.333-1.333c-0.736%200-1.333%200.597-1.333%201.333s0.597%201.333%201.333%201.333z'%3e%3c/path%3e%3cpath%20d='M1.666%2016.001c0-7.916%206.417-14.333%2014.333-14.333s14.333%206.417%2014.333%2014.333-6.417%2014.333-14.333%2014.333c-7.916%200-14.333-6.417-14.333-14.333zM15.999%203.668c-6.811%200-12.333%205.522-12.333%2012.333s5.522%2012.333%2012.333%2012.333c6.812%200%2012.333-5.522%2012.333-12.333s-5.522-12.333-12.333-12.333z'%3e%3c/path%3e%3c/symbol%3e%3c/defs%3e%3c/svg%3e",import.meta.url).href}#icon-settings" />
+                      <svg
+                        class="action-required-item-icon"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        aria-hidden="true"
+                      >
+                        <path d="M15.999 8.335c0.552 0 1 0.448 1 1v8c0 0.552-0.448 1-1 1s-1-0.448-1-1v-8c0-0.552 0.448-1 1-1z"></path>
+                        <path d="M15.999 22.668c0.736 0 1.333-0.597 1.333-1.333s-0.597-1.333-1.333-1.333c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333z"></path>
+                        <path d="M1.666 16.001c0-7.916 6.417-14.333 14.333-14.333s14.333 6.417 14.333 14.333-6.417 14.333-14.333 14.333c-7.916 0-14.333-6.417-14.333-14.333zM15.999 3.668c-6.811 0-12.333 5.522-12.333 12.333s5.522 12.333 12.333 12.333c6.812 0 12.333-5.522 12.333-12.333s-5.522-12.333-12.333-12.333z"></path>
                       </svg>
-                      <p class="action-required-name">${n.name}</p>
+                      <p class="action-required-name">${c.name}</p>
                     </div>
-                    <p class="action-required-name-qty">${t[s]}</>
+                    <p class="action-required-name-qty">${e[s]}</>
                   </li>`).join("")}
           </ul>
         </div>
       </section>
-  `}async function f(){return`
+  `}async function u(){return`
     <section class="actions">
         <div class="container">
           <div class="actions-wrap">
-            <button type="button" class="actions-optimize-btn">${(await c()).actions.primary}</button>
+            <button type="button" class="actions-optimize-btn">${(await n()).actions.primary}</button>
           </div>
         </div>
       </section>
-  `}async function v(){const e=await c();return`
+  `}async function h(){const t=await n();return`
     <div class="alert">
       <img
         src="${new URL("/assets/settings-img-C5bOI3cp.png",import.meta.url).href}"
@@ -88,15 +102,15 @@ import{a as r}from"./assets/vendor-Dl2X3eg5.js";(function(){const t=document.cre
             <p class="alert-heading">Settings</p>
             <span class="alert-time">now</span>
           </div>
-          <p class="alert-descr">${e.status_summary.recommendation}</p>
+          <p class="alert-descr">${t.status_summary.recommendation}</p>
         </div>
     </div>  
-  `}async function u(){const e=await c();return`
+  `}async function v(){const t=await n();return`
   <div class="overlay">
     <div class="popup">
           <div class="popup-header">
-            <p class="popup-title">${e.optimization_status.message}</p>
-            <p class="popup-descr">${e.optimization_status.submessage}</p>
+            <p class="popup-title">${t.optimization_status.message}</p>
+            <p class="popup-descr">${t.optimization_status.submessage}</p>
             <p class="popup-timer">01:00</p>
             <img
               src="${new URL("/assets/settings-img-popup-D2aFHVZE.png",import.meta.url).href}"
@@ -105,19 +119,19 @@ import{a as r}from"./assets/vendor-Dl2X3eg5.js";(function(){const t=document.cre
             />
           </div>
           <div class="popup-footer">
-            <button type="button" class="popup-btn">${e.actions.secondary}</button>
+            <button type="button" class="popup-btn">${t.actions.secondary}</button>
           </div>
         </div>
       </div>
-  `}document.addEventListener("DOMContentLoaded",async function(){const e=`
+  `}document.addEventListener("DOMContentLoaded",async function(){const t=`
         ${await l()}
-        ${await h()}
+        ${await f()}
         ${await d()}
         ${await m()}
-        ${await f()}
-`;document.querySelector(".main-content").insertAdjacentHTML("afterbegin",e),setTimeout(async()=>{const t=`
-    ${await v()}
-        `;document.querySelector(".main-content").insertAdjacentHTML("beforeend",t),setTimeout(async()=>{const a=`
         ${await u()}
-        `;document.querySelector(".main-content").insertAdjacentHTML("beforeend",a)},5e3)},3e3)});
+`;document.querySelector(".main-content").insertAdjacentHTML("afterbegin",t),setTimeout(async()=>{const e=`
+    ${await h()}
+        `;document.querySelector(".main-content").insertAdjacentHTML("beforeend",e),setTimeout(async()=>{const i=`
+        ${await v()}
+        `;document.querySelector(".main-content").insertAdjacentHTML("beforeend",i)},5e3)},3e3)});
 //# sourceMappingURL=index.js.map
